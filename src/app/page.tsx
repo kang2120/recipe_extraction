@@ -79,6 +79,9 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-1722119470458198"></meta>
+      </head>
       {/* ヘッダー */}
       <header className={styles.header}>
         <div className={styles.logo}>
