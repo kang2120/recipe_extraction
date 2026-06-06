@@ -81,6 +81,8 @@ export default function Home() {
     <main className={styles.main}>
       <head>
         <meta name="google-adsense-account" content="ca-pub-1722119470458198"></meta>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1722119470458198"
+     crossOrigin="anonymous"></script>
       </head>
       {/* ヘッダー */}
       <header className={styles.header}>
