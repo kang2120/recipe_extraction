@@ -194,6 +194,21 @@
   line-height: 1.8;
 }
 
+.footerLinks {
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+.footerLinks a {
+  color: var(--gray-400);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footerLinks a:hover {
+  color: var(--red);
+}
+
 .footerSub {
   font-size: 11px;
   color: var(--gray-200);

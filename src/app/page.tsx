@@ -170,7 +170,10 @@ export default function Home() {
 
       {/* フッター */}
       <footer className={styles.footer}>
-        <p>© 2025 recipeAI — Powered by Claude API</p>
+        <p>© 2026 recipeAI — Powered by Claude API</p>
+        <p className={styles.footerLinks}>
+          <a href="/privacy">プライバシーポリシー</a>
+        </p>
         <p className={styles.footerSub}>
           ※ 本サービスはYouTube動画の字幕・説明文をもとにAIが解析します
         </p>

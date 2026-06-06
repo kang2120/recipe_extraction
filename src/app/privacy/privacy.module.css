@@ -1,0 +1,90 @@
+/* src/app/privacy/privacy.module.css */
+
+.main {
+  background: var(--gray-50);
+  min-height: 100vh;
+  padding: 2rem 1rem 4rem;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.back {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--gray-400);
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: color 0.15s;
+}
+
+.back:hover {
+  color: var(--red);
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+
+.updated {
+  font-size: 13px;
+  color: var(--gray-400);
+  margin-bottom: 2.5rem;
+}
+
+.section {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 0.75rem;
+}
+
+.section h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin: 1rem 0 0.4rem;
+}
+
+.section p {
+  font-size: 14px;
+  color: var(--gray-800);
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+
+.section ul {
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.section li {
+  font-size: 14px;
+  color: var(--gray-800);
+  line-height: 1.8;
+  margin-bottom: 0.25rem;
+}
+
+.section a {
+  color: var(--red);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.section a:hover {
+  opacity: 0.8;
+}
