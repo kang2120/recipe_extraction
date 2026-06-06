@@ -1,0 +1,20 @@
+# 依存関係
+node_modules/
+.npm
+
+# Next.js ビルド成果物
+.next/
+out/
+build/
+
+# 環境変数（絶対にコミットしない！）
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# その他
+.DS_Store
+*.log
+.vercel

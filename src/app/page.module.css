@@ -1,0 +1,219 @@
+/* src/app/page.module.css */
+
+.main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+  min-height: 100vh;
+}
+
+/* ── ヘッダー ── */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  font-family: 'Syne', 'Noto Sans JP', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--gray-800);
+  letter-spacing: -1.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.logoDot {
+  width: 10px;
+  height: 10px;
+  background: var(--red);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.logoAccent {
+  color: var(--red);
+}
+
+.tagline {
+  font-size: 14px;
+  color: var(--gray-400);
+}
+
+/* ── 入力カード ── */
+.inputCard {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.urlRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.ytIcon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: var(--red);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.urlInput {
+  flex: 1;
+  height: 40px;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 0 12px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 13px;
+  color: var(--gray-800);
+  background: var(--gray-50);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  min-width: 0;
+}
+
+.urlInput:focus {
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px rgba(226, 75, 74, 0.12);
+}
+
+.urlInput:disabled {
+  opacity: 0.6;
+}
+
+.extractBtn {
+  height: 40px;
+  padding: 0 18px;
+  background: var(--red);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.15s, transform 0.1s;
+  flex-shrink: 0;
+}
+
+.extractBtn:hover:not(:disabled) {
+  opacity: 0.88;
+}
+
+.extractBtn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.extractBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.hint {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--gray-400);
+}
+
+.errorBox {
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: var(--red-light);
+  border-radius: var(--radius-md);
+  color: var(--red-dark);
+  font-size: 13px;
+}
+
+.usageInfo {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--gray-400);
+  text-align: right;
+}
+
+/* ── ローディング ── */
+.loadingCard {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.loadingSpinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--gray-200);
+  border-top-color: var(--red);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+.loadingText {
+  font-size: 14px;
+  color: var(--gray-400);
+}
+
+/* ── フッター ── */
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 12px;
+  color: var(--gray-400);
+  line-height: 1.8;
+}
+
+.footerSub {
+  font-size: 11px;
+  color: var(--gray-200);
+  margin-top: 4px;
+}
+
+/* ── レスポンシブ ── */
+@media (max-width: 500px) {
+  .urlRow {
+    flex-wrap: wrap;
+  }
+
+  .urlInput {
+    order: 2;
+    flex: 1 1 100%;
+  }
+
+  .extractBtn {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+}
