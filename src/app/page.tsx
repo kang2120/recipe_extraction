@@ -85,7 +85,8 @@ export default function Home() {
           <span className={styles.logoDot} aria-hidden="true" />
           recipe<span className={styles.logoAccent}>AI</span>
         </div>
-        <p className={styles.tagline}>
+        <div className={styles.headerNav}><a href="/favorites" className={styles.favLink}>❤️ お気に入り</a></div>
+      <p className={styles.tagline}>
           YouTubeのURLを貼るだけで材料・手順を自動抽出
         </p>
       </header>

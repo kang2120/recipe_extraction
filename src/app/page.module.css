@@ -232,3 +232,26 @@
     justify-content: center;
   }
 }
+
+/* ── ヘッダーナビ ── */
+.headerNav {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.favLink {
+  font-size: 13px;
+  color: var(--gray-400);
+  text-decoration: none;
+  padding: 4px 10px;
+  border: 1px solid var(--gray-200);
+  border-radius: 20px;
+  background: var(--white);
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.favLink:hover {
+  color: var(--red);
+  border-color: var(--red);
+}
