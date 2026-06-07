@@ -173,6 +173,8 @@ export default function Home() {
         <p>© 2026 recipeAI — Powered by Claude API</p>
         <p className={styles.footerLinks}>
           <a href="/privacy">プライバシーポリシー</a>
+          <span> · </span>
+          <a href="/terms">利用規約</a>
         </p>
         <p className={styles.footerSub}>
           ※ 本サービスはYouTube動画の字幕・説明文をもとにAIが解析します

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 }
 
 const LAST_UPDATED = '2026年6月6日'
-const CONTACT_EMAIL = 'contact@example.com' // ← あなたのメールアドレスに変更
+const CONTACT_EMAIL = 'kangmc1011@gmail.com' // ← あなたのメールアドレスに変更
 
 export default function PrivacyPage() {
   return (
